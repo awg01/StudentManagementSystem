@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button type="button" onclick="loadXMLData()">Get XML  data</button>
+
+<table id="demo" border="1"></table>
+
+<script>
+  function loadXMLData()
+  {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function()
+    {
+      if (this.readyState == 4 && this.status == 200)
+      {
+         MyFunction(this);
+      }
+    };
+
+    xhttp.open("POST","hello.xml",true);
+    xhttp.send();
+  }
+
+  function MyFunction(xml)
+  {
+      var i;
+      var doc1 = xml.responseXML;
+      var table = "<tr><td>Firstname</td><td>Lastname</td><td>RollNo</td><td>DOB</td><td>Email</td><td>Mobile</td><td>Gender</td></tr>";
+      var x= doc1.getElementsByTagName("student");
+      for(i=0;i<x.length;i++)
+      {
+        table +="<tr><td>"+
+        x[i].getElementsByTagName("firstname")[0].childNodes[0].nodeValue+
+          "</td><td>"
+        +x[i].getElementsByTagName("lastname")[0].childNodes[0].nodeValue+
+          "</td><td>"
+        +x[i].getElementsByTagName("rollno")[0].childNodes[0].nodeValue+
+          "</td><td>"
+        +x[i].getElementsByTagName("dob")[0].childNodes[0].nodeValue+
+         "</td><td>"
+         +x[i].getElementsByTagName("email")[0].childNodes[0].nodeValue+
+           "</td><td>"
+         +x[i].getElementsByTagName("mobile")[0].childNodes[0].nodeValue+
+           "</td><td>"
+         +x[i].getElementsByTagName("gender")[0].childNodes[0].nodeValue+
+          "</td></tr>";
+      }
+
+      document.getElementById("demo").innerHTML=table;
+    }
+
+</script>
+
+</body>
+</html>

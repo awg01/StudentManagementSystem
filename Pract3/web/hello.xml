@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<root>
+
+<student>
+  <firstname>AKASH</firstname>
+  <lastname>GUDADHE</lastname>
+  <rollno>12345</rollno>
+  <dob>11/02/98</dob>
+  <email>A@GMAIL.COM</email>
+  <mobile>9130708570</mobile>
+  <gender>MALE</gender>
+</student>
+
+<student>
+  <firstname>PRAVIN</firstname>
+  <lastname>NIKURE</lastname>
+  <rollno>22</rollno>
+  <dob>13/03/98</dob>
+  <email>P@GMAIL.COM</email>
+  <mobile>8975588243</mobile>
+  <gender>MALE</gender>
+</student>
+
+<student>
+  <firstname>AKASH</firstname>
+  <lastname>MULE</lastname>
+  <rollno>1101</rollno>
+  <dob>01/05/99</dob>
+  <email>A@GMAIL.COM</email>
+  <mobile>7778585855</mobile>
+  <gender>MALE</gender>
+</student>
+
+</root>

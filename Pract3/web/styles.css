@@ -1,0 +1,69 @@
+body{
+  background-image: url(bg.gif);
+}
+
+#reg_table{
+  border: 1px solid black;
+  padding-left: 30px;
+}
+
+#districtSel{
+  position: relative;
+  left: 60%;
+  top: 40%;
+}
+
+#talukaSel{
+  position: relative;
+  left: 62%;
+  top: 40%;
+}
+
+#villageSel{
+  position: relative;
+  left: 61%;
+  top: 40%;
+}
+
+#login_table{
+  border: 1px solid black;
+  padding-left: 05px;
+}
+
+tr{
+  height: 10px;
+}
+
+#page_title{
+   color: blue;
+   font-style: italic;
+   font-family: serif, "Times New Roman";
+}
+
+#log_reg_button{
+  color: green;
+  position: relative;
+  left: 20%;
+  top: 40%;
+}
+
+#log_login_button{
+  color: red;
+  position: relative;
+  left: 20%;
+  top: 50%;
+}
+
+#reg_button{
+  color: green;
+  position: relative;
+  left: 35%;
+  top: 95%;
+}
+
+#login_button{
+  color: red;
+  position: relative;
+  left: 5%;
+  top: 95%;
+}
